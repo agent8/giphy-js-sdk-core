@@ -3,13 +3,6 @@
   "version": "1.0.1",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "babel -d lib/ src/ && mocha --compilers js:babel-core/register --recursive \"./tests/**/*.spec.js\"",
-    "lint": "gulp default",
-    "publish_npm": "npm run test patch && npm publish",
-    "build_for_npm": "gulp; babel -d lib/ src/",
-    "build_for_browser": "WEBPACK_ENV=build webpack"
-  },
   "author": "Cosmo Cochrane",
   "license": "ISC",
   "dependencies": {
